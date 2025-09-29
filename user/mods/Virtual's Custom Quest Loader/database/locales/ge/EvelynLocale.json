@@ -1,0 +1,33 @@
+{
+    "677fdcd382e30db2828dee1f name": "Der Westen - Teil 1",
+    "677fdcd382e30db2828dee1f description": "Was für ein Chaos... Warte, du, schnapp dir schnell die Beretta und hilf uns, diese Gopniks so schnell wie möglich loszuwerden! Die Vorstellungsrunde kann warten.",
+    "677fdcd382e30db2828dee1f startedMessageText": "Was für ein Chaos... Warte, du, schnapp dir schnell die Beretta und hilf uns, diese Gopniks so schnell wie möglich loszuwerden! Die Vorstellungsrunde kann warten.",
+    "677fdcd382e30db2828dee1f successMessageText": "Gut gemacht! Ich wusste, dass diese Gopniks kein Problem für dich sein würden.",
+    "677fdcd35364c4071e60852b": "Töte 8 Scavs mit einer M9 Beretta in der Fabrik!",
+
+    "677fdcd3228ae8e73f55e317 name": "Kampfbereit",
+    "677fdcd3228ae8e73f55e317 description": "Bevor du an die Front gehst, musst du trainieren. Wir haben nicht viele Leute hier im Lager, und die Zeit wird knapp... Leg ein höheres Tempo vor.",
+    "677fdcd3228ae8e73f55e317 startedMessageText": "Bevor du an die Front gehst, musst du trainieren. Wir haben nicht viele Leute hier im Lager, und die Zeit wird knapp... Leg ein höheres Tempo vor.",
+    "677fdcd3228ae8e73f55e317 successMessageText": "Perfekt. Du bist jetzt kampfbereit.",
+    "677fdcd9e57979c713d49603": "Stärke auf Stufe 3 erhöhen!",
+    "677fdcd3228ae8e73f55e317": "Ausdauer auf Stufe 2 erhöhen!",
+
+    "677fdcd9a0f157df28e42320 name": "Der Westen - Teil 2",
+    "677fdcd9a0f157df28e42320 description": "Jetzt, wo du deine Ausbildung abgeschlossen hast, müssen wir die Fabrik schnell verlassen. Ja, es ist spät, aber wir wurden von den BEARs entdeckt, nachdem wir mit den Scavs eine Schießerei hatten, und wir sind nicht ausgerüstet, um hier zu überleben. Aber ich habe noch eine Idee, bevor wir aufbrechen. Nimm diese USB-Sticks und installiere sie in dem verdammten Büro im dritten Stock. Sie enthalten ein kleines Geschenk mit falschen Informationen. Nachts ist es fast stockdunkel, also sei vorsichtig.",
+    "677fdcd9a0f157df28e42320 startedMessageText": "Jetzt, wo du deine Ausbildung abgeschlossen hast, müssen wir die Fabrik schnell verlassen. Ja, es ist spät, aber wir wurden von den BEARs entdeckt, nachdem wir mit den Scavs eine Schießerei hatten, und wir sind nicht ausgerüstet, um hier zu überleben. Aber ich habe noch eine Idee, bevor wir aufbrechen. Nimm diese USB-Sticks und installiere sie in dem verdammten Büro im dritten Stock. Sie enthalten ein kleines Geschenk mit falschen Informationen. Nachts ist es fast stockdunkel, also sei vorsichtig.",
+    "677fdcd9a0f157df28e42320 successMessageText": "Gut, und jetzt los!",
+    "677fdcd98150c19b38347d75": "Finde den Standort des Büros (bei Nacht)!",
+    "677fdcd933543d24ca381c3a": "Platziere die 3 USB-Sticks!",
+
+    "677fdcd94fda0fe97e6fce2d name": "Die kleine Truppe",
+    "677fdcd94fda0fe97e6fce2d description": "Hör zu... Es ist wirklich schlimm, wir müssen unsere Soldaten schnell behandeln. Besorge die medizinische Ausrüstung, die du finden kannst, und zwar schnell! Du solltest sie im medizinischen Gebäude auf dem Zollgelände finden.",
+    "677fdcd94fda0fe97e6fce2d startedMessageText": "Hör zu... Es ist wirklich schlimm, wir müssen unsere Soldaten schnell behandeln. Besorge die medizinische Ausrüstung, die du finden kannst, und zwar schnell! Du solltest sie im medizinischen Gebäude auf dem Zollgelände finden.",
+    "677fdcd94fda0fe97e6fce2d successMessageText": "Danke... Nun, wir haben nicht viel Zeit; wir müssen weitermachen.",
+    "677fdcd94c19b66f3f99bc3a": "Gesundheit auf Stufe 3 erhöhen!",
+    "677fdcd9c3937bcade97e60a": "Übergib 1 CMS, welches im Raid gefunden wurde!",
+    "677fdcd965ebec319d655ced": "Übergib 2 Aluminium-Schienen, welche im Raid gefunden wurden!",
+    "677fdcd9a5695fe29c305d0c": "Übergib 2 CALOK-B, welche im Raid gefunden wurden!",
+    "677fdcd9728f239528e44da5": "Übergib 2 IFAK, welche im Raid gefunden wurden!",
+    "677fdcd9fb8d59a95ed7be57": "Übergib 3 Armee-Bandagen, welche im Raid gefunden wurden!",
+    "677fdcd91e3a322dabeec117": "Übergib 3 Morphin-Injektoren, welche im Raid gefunden wurden!"
+}

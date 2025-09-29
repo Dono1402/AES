@@ -1,0 +1,30 @@
+{
+    "677fdcd3cbadd53ed60d5b11 name": "Extravaganza de accesorios!!",
+    "677fdcd3cbadd53ed60d5b11 description": "Hey, soy Anastasia. Soy Rusa, y no hace falta que lo menciones, sé que te ha enviado Svetlana. Soy la proveedora de todos los accesorios que necesitas para tus armas, pero tendrás que ganártelos. Te asignaré tareas para realizar. Complétalas con éxito y podras esperar obtener mejores accesorios. Ah, y al igual que Svetlana, ofrezco precios más asequibles que otros comerciantes. También compro accesorios a precios más ventajosos, para que sepas dónde venderlos. ¡Buena suerte!",
+    "677fdcd3cbadd53ed60d5b11 startedMessageText": "Hey, soy Anastasia. Soy Rusa, y no hace falta que lo menciones, sé que te ha enviado Svetlana. Soy la proveedora de todos los accesorios que necesitas para tus armas, pero tendrás que ganártelos. Te asignaré tareas para realizar. Complétalas con éxito y podras esperar obtener mejores accesorios. Ah, y al igual que Svetlana, ofrezco precios más asequibles que otros comerciantes. También compro accesorios a precios más ventajosos, para que sepas dónde venderlos. ¡Buena suerte!",
+    "677fdcd3cbadd53ed60d5b11 successMessageText": "Tu reputación habla por sí sola. Muy buen trabajo! Echa un vistazo a mi tienda, tendrás acceso a nuevos accesorios.",
+    "677fdcd35621f7de05d2f301": "Elimina a 20 PMC",
+    "677fdcd31ef205be8c000f17": "Elimina a 20 Scavs",
+    "677fdcd3658915f98c17e404": "Elimina a 2 Jefes",
+
+    "677fdcd3bacd612dfe817a61 name": "Miembro del MI6 ?",
+    "677fdcd3bacd612dfe817a61 description": "Como mencioné anteriormente, tengo todo aquí, pero hay algunas condiciones que cumplir, y no serán fáciles de cumplir. Tu objetivo es traerme todos los silenciadores que puedas encontrar, incluso los que ya están instalados en las armas. No te molestes en buscarlos en otras tiendas o comerciantes, quiero los auténticos, los que se han usado en el campo. Y, además de eso, quiero que acabes con la vida de 50 scavs. Es hora de sacarlos de mi tienda, ya se está poniendo insoportable.",
+    "677fdcd3bacd612dfe817a61 startedMessageText": "Como mencioné anteriormente, tengo todo aquí, pero hay algunas condiciones que cumplir, y no serán fáciles de cumplir. Tu objetivo es traerme todos los silenciadores que puedas encontrar, incluso los que ya están instalados en las armas. No te molestes en buscarlos en otras tiendas o comerciantes, quiero los auténticos, los que se han usado en el campo. Y, además de eso, quiero que acabes con la vida de 50 scavs. Es hora de sacarlos de mi tienda, ya se está poniendo insoportable.",
+    "677fdcd3bacd612dfe817a61 successMessageText": "Wow, hay tantos silenciadores aquí! Muchas gracias a ti por esta increible colección!",
+    "677fdcd38e86f37b9fd52923": "Encuentra 20 Silenciadores en incursion (Raid)",
+    "677fdcd3e6477d3c98a4dc65": "Entrega los silenciadores",
+    "677fdcd3a3054df6291548b7": "Elimina a 50 Scavs usando armas silenciadas",
+
+    "677fdcd33a40447852ab7152 name": "Lealtad Real",
+    "677fdcd33a40447852ab7152 description": "Aprecio tu método de trabajo, tu eficiencia y tu determinación. Aunque no tomo bandos, mi lealtad hacia mis clientes es inquebrantable. Este equilibrio con mis clientes me permite proporcionar equipos sin demoras en todo momento. Sin embargo, tu eres una excepción como intermediario con los BEAR y necesito saber que cuentas con su total confianza. Pruébalo y serás recompensado con el mejor arsenal que podrás encontrar en las tierras de Tarkov.",
+    "677fdcd33a40447852ab7152 startedMessageText": "Aprecio tu método de trabajo, tu eficiencia y tu determinación. Aunque no tomo bandos, mi lealtad hacia mis clientes es inquebrantable. Este equilibrio con mis clientes me permite proporcionar equipos sin demoras en todo momento. Sin embargo, tu eres una excepción como intermediario con los BEAR y necesito saber que cuentas con su total confianza. Pruébalo y serás recompensado con el mejor arsenal que podrás encontrar en las tierras de Tarkov.",
+    "677fdcd33a40447852ab7152 successMessageText": "¡Es increíble! ¡Sírvete tú mismo, te lo mereces! Podria ser de que tengamos la oportunidad de volver a trabajar juntos en nuevas tareas. Te veo despues, y no mueras.",
+    "677fdcd38ad7c8b4f74a1b98": "Logra lealtad real con Svetlana (LL4)",
+
+    "677fdcd302ff75fa82a40674 name": "Venganza",
+    "677fdcd302ff75fa82a40674 description": "блудница ! ¡Lo siento, mercenario! Mi culpa por no haberte notado antes. Esos molestos scavs realmente arruinaron una gran parte de mi cargamento, y siento como si simplemente se estuvieran partiendo de risa de mí. Este es el trato: si estás dispuesto a enfrentarte a esos scavs y mostrarles quién es el jefe, podría haber una jugosa recompensa esperándote.",
+    "677fdcd302ff75fa82a40674 startedMessageText": "Que onda mercenario ! Mi culpa por no haberte notado antes. Esos molestos scavs realmente arruinaron una gran parte de mi cargamento, y siento como si simplemente se estuvieran partiendo de risa de mí. Este es el trato: si estás dispuesto a enfrentarte a esos scavs y mostrarles quién es el jefe, podría haber una jugosa recompensa esperándote.",
+    "677fdcd302ff75fa82a40674 successMessageText": "¡Buen trabajo, mercenario! No dudes en echar un vistazo a los artículos de mi tienda, ¡puede que ahora haya algo que te llame la atención!",
+    "677fdcd3379ff8c533bae765": "Elimina a 30 Scavs",
+    "677fdcd3e7c1d91db1cfd611": "Elimina a 3 Jefes"
+}

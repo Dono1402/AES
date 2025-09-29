@@ -1,0 +1,28 @@
+{
+	"name": "AES",
+	"version": "0.6",
+	"main": "src/AES.js",
+	"license": "MIT",
+	"author": "Flowless",
+	"sptVersion": "3.11.*",
+	"contributors": ["DJ"],
+	"scripts": {
+		"setup": "npm i",
+		"build": "node ./packageBuild.ts",
+		"format": "npx @biomejs/biome check --write ./"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"@types/node": "20.11",
+		"@typescript-eslint/eslint-plugin": "7.2",
+		"@typescript-eslint/parser": "7.2",
+		"archiver": "^6.0",
+		"eslint": "8.57",
+		"fs-extra": "11.2",
+		"ignore": "^5.2",
+		"os": "^0.1",
+		"tsyringe": "4.8.0",
+		"typescript": "5.4",
+		"winston": "3.12"
+	}
+}
