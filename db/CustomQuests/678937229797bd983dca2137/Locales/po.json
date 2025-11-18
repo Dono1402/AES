@@ -1,0 +1,30 @@
+{
+    "677fdcd3cbadd53ed60d5b11 name": "Extravagância de Acessórios!",
+    "677fdcd3cbadd53ed60d5b11 description": "Agora que as apresentações acabaram, tenho alguns trabalhos que precisam ser resolvidos. Eu sou a fornecedora de todos os acessórios que você precisa para suas armas, para isso, você terá merecê-los. Vou te passar algumas tarefas. Complete-as e poderá esperar acessórios cada vez melhores. Ah, e assim como a Svetlana, ofereço preços mais acessíveis do que outros comerciantes. Também compro acessórios por valores mais chamativos, então você já sabe onde vender. Boa sorte!",
+    "677fdcd3cbadd53ed60d5b11 startedMessageText": "Agora que as apresentações acabaram, tenho alguns trabalhos que precisam ser resolvidos. Eu sou a fornecedora de todos os acessórios que você precisa para suas armas, para isso, você terá merecê-los. Vou te passar algumas tarefas. Complete-as e poderá esperar acessórios cada vez melhores. Ah, e assim como a Svetlana, ofereço preços mais acessíveis do que outros comerciantes. Também compro acessórios por valores mais chamativos, então você já sabe onde vender. Boa sorte!",
+    "677fdcd3cbadd53ed60d5b11 successMessageText": "Sua reputação fala por si. Ótimo trabalho! Dê uma olhada na minha loja — você terá acesso a novos acessórios.",
+    "677fdcd35621f7de05d2f301": "Elimine 20 PMCs",
+    "677fdcd31ef205be8c000f17": "Elimine 20 Scavs",
+    "677fdcd3658915f98c17e404": "Elimine 2 Chefes",
+	
+    "677fdcd3bacd612dfe817a61 name": "Membro do MI6?",
+    "677fdcd3bacd612dfe817a61 description": "Como mencionei antes, tenho de tudo aqui, mas existem condições a serem cumpridas — e elas não serão fáceis. Seu objetivo é me trazer todos os supressores que conseguir encontrar, até mesmo os que já estiverem instalados em armas. Não adianta procurar em outras lojas ou comerciantes, eu sei os que tem lá e por isso quero os autênticos, os que foram usados em uma incursão. E além disso, quero que você acabe com a vida de 50 scavs. Está na hora de tirá-los da minha loja, está ficando insuportável.",
+    "677fdcd3bacd612dfe817a61 startedMessageText": "Como mencionei antes, tenho de tudo aqui, mas existem condições a serem cumpridas — e elas não serão fáceis. Seu objetivo é me trazer todos os supressores que conseguir encontrar, até mesmo os que já estiverem instalados em armas. Não adianta procurar em outras lojas ou comerciantes, eu sei os que tem lá e por isso quero os autênticos, os que foram usados em uma incursão. E além disso, quero que você acabe com a vida de 50 scavs. Está na hora de tirá-los da minha loja, está ficando insuportável.",
+    "677fdcd3bacd612dfe817a61 successMessageText": "Uau, quantos supressores! Muito obrigada — essa coleção está incrível!",
+    "677fdcd38e86f37b9fd52923": "Encontre 20 Supressores [Encontrado em uma incursão]",
+    "677fdcd3e6477d3c98a4dc65": "Entregue os supressores",
+    "677fdcd3211d313738bc4406": "Elimine 50 Scavs usando armas com um supressor instalado.",
+	
+    "677fdcd302ff75fa82a40674 name": "Retaliação",
+    "677fdcd302ff75fa82a40674 description": "Olá, mercenário! Me desculpe por não ter visto você ai antes. Aqueles scavs irritantes estragaram uma grande parte da minha carga, e parece que ainda estão rindo da minha cara. Aqui está o negócio: se estiver a fim de acabar com eles e mostrar quem manda, pode ter uma bela recompensa te esperando.",
+    "677fdcd302ff75fa82a40674 startedMessageText": "Olá, mercenário! Me desculpe por não ter visto você ai antes. Aqueles scavs irritantes estragaram uma grande parte da minha carga, e parece que ainda estão rindo da minha cara. Aqui está o negócio: se estiver a fim de acabar com eles e mostrar quem manda, pode ter uma bela recompensa te esperando.",
+    "677fdcd302ff75fa82a40674 successMessageText": "Bom trabalho, mercenário! Sinta-se livre para conferir as novidades na minha loja — talvez algo chame sua atenção agora!",
+    "677fdcd3379ff8c533bae765": "Elimine 30 Scavs",
+    "677fdcd3e7c1d91db1cfd611": "Elimine 3 Chefes",
+	
+    "677fdcd33a40447852ab7152 name": "Lealdade Verdadeira",
+    "677fdcd33a40447852ab7152 description": "Aprecio seus métodos de trabalho, sua eficiência e sua determinação. Embora eu não tome um lado nisso tudo, minha lealdade aos meus clientes é inabalável. Esse equilíbrio me permite fornecer equipamentos sem atraso, a qualquer momento. No entanto, você é uma exceção como intermediário com os BEARs, e eu preciso saber que você tem a total confiança deles. Prove isso e será recompensado com o melhor arsenal que pode encontrar aqui em Tarkov.",
+    "677fdcd33a40447852ab7152 startedMessageText": "Aprecio seus métodos de trabalho, sua eficiência e sua determinação. Embora eu não tome um lado nisso tudo, minha lealdade aos meus clientes é inabalável. Esse equilíbrio me permite fornecer equipamentos sem atraso, a qualquer momento. No entanto, você é uma exceção como intermediário com os BEARs, e eu preciso saber que você tem a total confiança deles. Prove isso e será recompensado com o melhor arsenal que pode encontrar aqui em Tarkov.",
+    "677fdcd33a40447852ab7152 successMessageText": "Incrível! Fique à vontade — você merece! Quem sabe trabalharemos juntos novamente em novas tarefas. Até breve.",
+    "677fdcd38ad7c8b4f74a1b98": "Alcance o nível Elite de Lealdade com Svetlana (LL4)"
+}

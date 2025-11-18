@@ -1,0 +1,30 @@
+{
+    "677fdcd3cbadd53ed60d5b11 name": "Modyfikacje bez końca!",
+    "677fdcd3cbadd53ed60d5b11 description": "Cześć, jestem Anastasia. Rosjanka. Nie musisz mi o tym mówić, wiem, że to Svetlana wysłała cię do mnie. Mogę zaopatrzyć cię we wszelkie modyfikacje do twojej broni ale najpierw musisz na nie zasłużyć. Dam ci kilka zadań do wykonania. Jeśli ci się uda, możesz liczyć na coraz lepsze akcesoria. Ach, i tak jak Svetlana, oferuję ceny znacznie niższe niż inni kupcy. Kupuję również po lepszych cenach - więc już wiesz, gdzie możesz sprzedać swó złom. Powodzenia!",
+    "677fdcd3cbadd53ed60d5b11 startedMessageText": "Cześć, jestem Anastasia. Rosjanka. Nie musisz mi o tym mówić, wiem, że to Svetlana wysłała cię do mnie. Mogę zaopatrzyć cię we wszelkie modyfikacje do twojej broni ale najpierw musisz na nie zasłużyć. Dam ci kilka zadań do wykonania. Jeśli ci się uda, możesz liczyć na coraz lepsze akcesoria. Ach, i tak jak Svetlana, oferuję ceny znacznie niższe niż inni kupcy. Kupuję również po lepszych cenach - więc już wiesz, gdzie możesz sprzedać swó złom. Powodzenia!",
+    "677fdcd3cbadd53ed60d5b11 successMessageText": "Twoja sława cię wyprzedza. Dobra robota! Rozejrzyj się w moim sklepie, masz dostęp do paru nowych zabawek.",
+    "677fdcd35621f7de05d2f301": "Wyeliminuj 20 PMC",
+    "677fdcd31ef205be8c000f17": "Wyeliminuj 20 Scav",
+    "677fdcd3658915f98c17e404": "Wyeliminuj 2 BOSS",
+
+    "677fdcd3bacd612dfe817a61 name": "Członek MI6?",
+    "677fdcd3bacd612dfe817a61 description": "Jak już wspominałam, mam tu praktycznie wszystko, ale mam pewne wymagania którym niełatwo będzie podołać. Chcę od ciebie wszystkie tłumiki jakie tylko znajdziesz, nawet te już zainstalowane na broni. Nie przynoś mi nówek albo części z bazaru - chcę prawdziwe zabawki, użyte w bitwie. Ach, masz też zakończyć życie 50 scavów. Mam dość ich wizyt w moim sklepie, nie zniosę ich tutaj znacznie dłużej.",
+    "677fdcd3bacd612dfe817a61 startedMessageText": "Jak już wspominałam, mam tu praktycznie wszystko, ale mam pewne wymagania którym niełatwo będzie podołać. Chcę od ciebie wszystkie tłumiki jakie tylko znajdziesz, nawet te już zainstalowane na broni. Nie przynoś mi nówek albo części z bazaru - chcę prawdziwe zabawki, użyte w bitwie. Ach, masz też zakończyć życie 50 scavów. Mam dość ich wizyt w moim sklepie, nie zniosę ich tutaj znacznie dłużej.",
+    "677fdcd3bacd612dfe817a61 successMessageText": "Wow, ile tego jest! Dziękuję bardzo za tę imponującą kolekcję!",
+    "677fdcd38e86f37b9fd52923": "Znajdź 20 tłumików [Found in Raid]",
+    "677fdcd3e6477d3c98a4dc65": "Oddaj tłumiki",
+    "677fdcd3a3054df6291548b7": "Wyeliminuj 50 Scav używając wytłumionej broni",
+
+    "677fdcd33a40447852ab7152 name": "Królewska Lojalność",
+    "677fdcd33a40447852ab7152 description": "Podziwiam twe metody pracy, efektywność i determinację. Mimo że nie opowiadam się za żadną ze stron, moja lojalność względem klientów jest niezachwiana. Takie stosunki z nimi pozwala mi zaopatrywać wyposażenie bez opóźnień. Ty jednak jesteś wyjątkiem przez twoje kontakty z BEAR, a ja muszę mieć pewność że masz ich bezgraniczne zaufanie. Udowodnij mi je, a ja wynagrodzę cię z najlepszym arsenałem w całym Tarkov.",
+    "677fdcd33a40447852ab7152 startedMessageText": "Podziwiam twe metody pracy, efektywność i determinację. Mimo że nie opowiadam się za żadną ze stron, moja lojalność względem klientów jest niezachwiana. Takie stosunki z nimi pozwala mi zaopatrywać wyposażenie bez opóźnień. Ty jednak jesteś wyjątkiem przez twoje kontakty z BEAR, a ja muszę mieć pewność że masz ich bezgraniczne zaufanie. Udowodnij mi je, a ja wynagrodzę cię z najlepszym arsenałem w całym Tarkov.",
+    "677fdcd33a40447852ab7152 successMessageText": "Niesamowite! Czuj się jak w domu. Być może zdarzy się jeszcze jakaś okazja by pracować razem. Do zobaczenia.",
+    "677fdcd38ad7c8b4f74a1b98": "Osiągnij LL4 u Svetlany",
+    
+    "677fdcd302ff75fa82a40674 name": "Zemsta",
+    "677fdcd302ff75fa82a40674 description": "Wybacz, najemniku! Nie zauważyłam cię wcześniej. Te cholerne Scavy znów uszkodziły ładunek mojego towaru, i zdaje się że mają z tego niezłą uciechę. Mam dla ciebie ofertę: jeśli chcesz im pokazać kto tu tak naprawdę rządzi... będzie to dla ciebie bardzo opłacalne.",
+    "677fdcd302ff75fa82a40674 startedMessageText": "Wybacz, najemniku! Nie zauważyłam cię wcześniej. Te cholerne Scavy znów uszkodziły ładunek mojego towaru, i zdaje się że mają z tego niezłą uciechę. Mam dla ciebie ofertę: jeśli chcesz im pokazać kto tu tak naprawdę rządzi... będzie to dla ciebie bardzo opłacalne.",
+    "677fdcd302ff75fa82a40674 successMessageText": "Dobra robota! Rozejrzyj się po sklepie, może coś wpadnie ci w oko.",
+    "677fdcd3379ff8c533bae765": "Wyeliminuj 30 Scav",
+    "677fdcd3e7c1d91db1cfd611": "Wyeliminuj 3 BOSS"
+}
