@@ -633,7 +633,7 @@
                 "conditionType": "VisitPlace",
                 "id": "677fdcd93c49f5b7257fc10e",
                 "target": "ter_017_area_1",
-                "value": "1"                   
+                "value": 1                   
             },
             {
                 "conditionType": "Location",
@@ -989,7 +989,7 @@
     "AvailableForStart": [
       {
           "conditionType": "Quest",
-          "avaibleAfter": 0,
+          "availableAfter": 0,
           "dynamicLocale": false,
           "id": "677fdcd915ced63f831fa002",
           "index": 0,
