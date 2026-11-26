@@ -1,10 +1,9 @@
-﻿using SPTarkov.DI.Annotations;
-using SPTarkov.Server.Core.DI;
+﻿using SPTarkov.Common.Models.Logging; // SPT 4.1: ISptLogger moved here from SPTarkov.Server.Core.Models.Utils
+using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.Models.Common;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
 using SPTarkov.Server.Core.Models.Spt.Config;
-using SPTarkov.Server.Core.Models.Utils;
-using SPTarkov.Server.Core.Services;
+using SPTarkov.Server.Core.Models.Spt.Tables;
 using SPTarkov.Server.Core.Utils.Cloners;
 
 namespace AES_Trader
@@ -12,12 +11,15 @@ namespace AES_Trader
     /// <summary>
     /// We inject this class into 'AddTraderWithDynamicAssorts' to help us with adding the new trader into the server
     /// </summary>
-    [Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
+    // SPT 4.1: DatabaseService.GetTables() is replaced by injecting the tables directly
+    // (TradersTable, LocaleTable). LocaleService was unused and is dropped. This helper is not an
+    // IOnLoad, so it needs no load-order priority (OnLoadOrder.PostDBModLoader + 1 in 4.0).
+    [Injectable]
     public class AddCustomTraderHelper(
         ISptLogger<AddCustomTraderHelper> logger,
         ICloner cloner,
-        DatabaseService databaseService,
-        LocaleService localeService)
+        TradersTable tradersTable,
+        LocaleTable localeTable)
     {
 
         /// <summary>
@@ -57,7 +59,7 @@ namespace AES_Trader
             var traderDataToAdd = new Trader
             {
                 Assort = emptyTraderItemAssortObject,
-                Base = cloner.Clone(traderDetailsToAdd),
+                Base = cloner.Clone(traderDetailsToAdd)!,
                 QuestAssort = new() // quest assort is empty as trader has no assorts unlocked by quests
                 {
                     // We create 3 empty arrays, one for each of the main statuses that are possible
@@ -69,7 +71,7 @@ namespace AES_Trader
             };
 
             // Add the new trader id and data to the server
-            if (!databaseService.GetTables().Traders.TryAdd(traderDetailsToAdd.Id, traderDataToAdd))
+            if (!tradersTable.TryAdd(traderDetailsToAdd.Id, traderDataToAdd))
             {
                 //Failed to add trader!
             }
@@ -84,11 +86,11 @@ namespace AES_Trader
         public void AddTraderToLocales(TraderBase baseJson, string firstName, string description)
         {
             // For each language, add locale for the new trader
-            var locales = databaseService.GetTables().Locales.Global;
+            var locales = localeTable.Global;
             var newTraderId = baseJson.Id;
             var fullName = baseJson.Name;
-            var nickName = baseJson.Nickname;
-            var location = baseJson.Location;
+            var nickName = baseJson.Nickname!;
+            var location = baseJson.Location!;
 
             foreach (var (localeKey, localeKvP) in locales)
             {
@@ -96,7 +98,7 @@ namespace AES_Trader
                 // The transformer will make sure that each time the locales are requested, the ones added below are included
                 localeKvP.AddTransformer(lazyloadedLocaleData =>
                 {
-                    lazyloadedLocaleData.Add($"{newTraderId} FullName", fullName);
+                    lazyloadedLocaleData!.Add($"{newTraderId} FullName", fullName);
                     lazyloadedLocaleData.Add($"{newTraderId} FirstName", firstName);
                     lazyloadedLocaleData.Add($"{newTraderId} Nickname", nickName);
                     lazyloadedLocaleData.Add($"{newTraderId} Location", location);
@@ -113,7 +115,7 @@ namespace AES_Trader
         /// <param name="newAssorts">new assorts we want to add</param>
         public void OverwriteTraderAssort(string traderId, TraderAssort newAssorts)
         {
-            if (!databaseService.GetTables().Traders.TryGetValue(traderId, out var traderToEdit))
+            if (!tradersTable.TryGetValue(traderId, out var traderToEdit))
             {
                 logger.Warning($"Unable to update assorts for trader: {traderId}, they couldn't be found on the server");
 

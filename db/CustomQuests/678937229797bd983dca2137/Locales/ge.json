@@ -13,18 +13,18 @@
     "677fdcd3bacd612dfe817a61 successMessageText": "Wow, so viele Schalldämpfer! Vielen Dank an dich für diese unglaubliche Sammlung!",
     "677fdcd38e86f37b9fd52923": "Finde 20 Schalldämpfer im Raid!",
     "677fdcd3e6477d3c98a4dc65": "Übergib die Schalldämpfer!",
-    "677fdcd3a3054df6291548b7": "Eliminiere 50 Scavs mit Schallgedämpften Waffen!",
+    "677fdcd3211d313738bc4406": "Eliminiere 50 Scavs mit Schallgedämpften Waffen!",
 
-    "677fdcd33a40447852ab7152 name": "Königliche Treue.",
-    "677fdcd33a40447852ab7152 description": "Ich schätze deine Arbeitsweise, deine Effizienz und deine Entschlossenheit. Obwohl ich keine Partei ergreife, ist meine Loyalität gegenüber meinen Kunden unerschütterlich. Diese Ausgewogenheit mit meinen Kunden ermöglicht es mir, Ausrüstung jederzeit und ohne Verzögerung zu liefern. Als Vermittler zwischen BEAR und USEC bildest du jedoch eine Ausnahme, und ich muss wissen, ob du ihr volles Vertrauen hast. Beweise es mir und du wirst mit dem besten Arsenal, das du hier in Tarkov finden kannst, belohnt werden.",
-    "677fdcd33a40447852ab7152 startedMessageText": "Ich schätze deine Arbeitsweise, deine Effizienz und deine Entschlossenheit. Obwohl ich keine Partei ergreife, ist meine Loyalität gegenüber meinen Kunden unerschütterlich. Diese Ausgewogenheit mit meinen Kunden ermöglicht es mir, Ausrüstung jederzeit und ohne Verzögerung zu liefern. Als Vermittler zwischen BEAR und USEC bildest du jedoch eine Ausnahme, und ich muss wissen, ob du ihr volles Vertrauen hast. Beweise es mir und du wirst mit dem besten Arsenal, das du hier in Tarkov finden kannst, belohnt werden.",
-    "677fdcd33a40447852ab7152 successMessageText": "Unglaublich! Bedien dich, du hast es verdient! Vielleicht haben wir ja bald Gelegenheit, wieder gemeinsam an neuen Aufgaben zu arbeiten. Wir sehen uns bald wieder.",
-    "677fdcd38ad7c8b4f74a1b98": "Erreiche treue Level 4 mit Svetlana (LL4)!",
-    
     "677fdcd302ff75fa82a40674 name": "Vergeltung",
     "677fdcd302ff75fa82a40674 description": "Hurenböcke!... Verzeihung, Söldner! Tut mir leid, dass ich dich nicht früher bemerkt habe. Diese lästigen Scavs haben einen großen Teil meiner Ladung vernichtet, und ich habe das Gefühl, dass sie mich nur auslachen. Wenn du es mit diesen Scavs aufnimmst und ihnen zeigst, wer der Boss ist, wartet vielleicht eine nette Belohnung auf dich.",
     "677fdcd302ff75fa82a40674 startedMessageText": "Hurenböcke... Verzeihung, Söldner! Tut mir leid, dass ich dich nicht früher bemerkt habe. Diese lästigen Scavs haben einen großen Teil meiner Ladung vernichtet, und ich habe das Gefühl, dass sie mich nur auslachen. Wenn du es mit diesen Scavs aufnimmst und ihnen zeigst, wer der Boss ist, wartet vielleicht eine nette Belohnung auf dich.",
     "677fdcd302ff75fa82a40674 successMessageText": "Gute Arbeit, Söldner! Schau dir doch mal die Sachen in meinem Sortiment an, vielleicht ist ja etwas dabei, das dich anspricht!",
     "677fdcd3379ff8c533bae765": "Eliminiere 30 Scavs!",
-    "677fdcd3e7c1d91db1cfd611": "Eliminiere 3 Bosse!"
+    "677fdcd3e7c1d91db1cfd611": "Eliminiere 3 Bosse!",
+
+    "677fdcd33a40447852ab7152 name": "Königliche Treue.",
+    "677fdcd33a40447852ab7152 description": "Ich schätze deine Arbeitsweise, deine Effizienz und deine Entschlossenheit. Obwohl ich keine Partei ergreife, ist meine Loyalität gegenüber meinen Kunden unerschütterlich. Diese Ausgewogenheit mit meinen Kunden ermöglicht es mir, Ausrüstung jederzeit und ohne Verzögerung zu liefern. Als Vermittler zwischen BEAR und USEC bildest du jedoch eine Ausnahme, und ich muss wissen, ob du ihr volles Vertrauen hast. Beweise es mir und du wirst mit dem besten Arsenal, das du hier in Tarkov finden kannst, belohnt werden.",
+    "677fdcd33a40447852ab7152 startedMessageText": "Ich schätze deine Arbeitsweise, deine Effizienz und deine Entschlossenheit. Obwohl ich keine Partei ergreife, ist meine Loyalität gegenüber meinen Kunden unerschütterlich. Diese Ausgewogenheit mit meinen Kunden ermöglicht es mir, Ausrüstung jederzeit und ohne Verzögerung zu liefern. Als Vermittler zwischen BEAR und USEC bildest du jedoch eine Ausnahme, und ich muss wissen, ob du ihr volles Vertrauen hast. Beweise es mir und du wirst mit dem besten Arsenal, das du hier in Tarkov finden kannst, belohnt werden.",
+    "677fdcd33a40447852ab7152 successMessageText": "Unglaublich! Bedien dich, du hast es verdient! Vielleicht haben wir ja bald Gelegenheit, wieder gemeinsam an neuen Aufgaben zu arbeiten. Wir sehen uns bald wieder.",
+    "677fdcd38ad7c8b4f74a1b98": "Erreiche treue Level 4 mit Svetlana (LL4)!"
 }

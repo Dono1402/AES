@@ -1809,7 +1809,7 @@
                   "conditionType": "VisitPlace",
                   "id": "677fdcdea9850a76aa4357f4",
                   "target": "place_SALE_03_AVOKADO",
-                  "value": "1"
+                  "value": 1
                 }
               ],
               "id": "677fdcdefda9cf5873005748"
@@ -1832,7 +1832,7 @@
                   "conditionType": "VisitPlace",
                   "id": "677fdcdeb66d613db776eb6e",
                   "target": "place_SALE_03_TOPBRAND",
-                  "value": "1"
+                  "value": 1
                 }
               ],
               "id": "677fdcdea4482fe4da1d2ceb"
@@ -3718,7 +3718,7 @@
                 },
                 {
                     "conditionType": "Location",
-                    "id": "67891505a4b55d9922d85456",
+                    "id": "f32362a4587cfbb6a906bed4",
                     "target": [
                       "Interchange"
                     ]

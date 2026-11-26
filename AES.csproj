@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Build file for the unofficial SPT 4.1.6 port of AES (original mod by Dono1402 / Flowless).
+    Build:  dotnet build -c Release
+    Output: bin/Release/net10.0/AES.dll  (copy it to SPT/user/mods/AES/ together with the db folder)
+  -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <!-- Keep the original assembly name so the installed file name is unchanged -->
+    <AssemblyName>AES</AssemblyName>
+    <RootNamespace>AES_Trader</RootNamespace>
+    <Version>0.7.9</Version>
+    <InformationalVersion>0.7.9-spt416port.1</InformationalVersion>
+    <!-- Keep the build reproducible and free of local paths -->
+    <Deterministic>true</Deterministic>
+    <PathMap>$(MSBuildProjectDirectory)=/_/</PathMap>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Compile-time references only: never copy SPT server or WTT DLLs next to the mod -->
+    <PackageReference Include="SPTushonka.Common" Version="4.1.6" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="SPTushonka.DI" Version="4.1.6" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="SPTushonka.Server.Core" Version="4.1.6" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="WTT-ServerCommonLib" Version="3.0.8" ExcludeAssets="runtime" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- db/ is data, not code -->
+    <None Remove="db\**" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DebugType>None</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+  </PropertyGroup>
+
+</Project>

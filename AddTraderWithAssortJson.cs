@@ -1,11 +1,10 @@
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
-using SPTarkov.Server.Core.Helpers;
+using SPTarkov.Server.Core.Helpers.Server; // SPT 4.1: ModHelper moved from SPTarkov.Server.Core.Helpers
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
 using SPTarkov.Server.Core.Models.Spt.Config;
 using SPTarkov.Server.Core.Models.Spt.Mod;
 using SPTarkov.Server.Core.Routers;
-using SPTarkov.Server.Core.Servers;
 using SPTarkov.Server.Core.Utils;
 using System.Reflection;
 using Path = System.IO.Path;
@@ -13,40 +12,52 @@ using Path = System.IO.Path;
 namespace AES_Trader;
 
 // This record holds the various properties for your mod
-public record ModMetadata : AbstractModMetadata
+// SPT 4.1: AbstractModMetadata was replaced by the IModMetadata interface (no more 'override'),
+// and IsBundleMod was removed (AES has no bundles).
+public record ModMetadata : IModMetadata
 {
-    public override string ModGuid { get; init; } = "com.dono.aes";
-    public override string Name { get; init; } = "AES";
-    public override string Author { get; init; } = "Flowless";
-    public override List<string>? Contributors { get; init; } = ["Colobos9mm"];
-    public override SemanticVersioning.Version Version { get; init; } = new("0.7.9");
-    public override SemanticVersioning.Range SptVersion { get; init; } = new("~4.0.0");
-    public override List<string>? Incompatibilities { get; init; } = ["ReadJsonConfigExample"];
-    public override Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; }
-    public override string? Url { get; init; } = "https://github.com/Dono1402/AES";
-    public override bool? IsBundleMod { get; init; } = false;
-    public override string? License { get; init; } = "MIT";
+    public string ModGuid { get; init; } = "com.dono.aes";
+    public string Name { get; init; } = "AES";
+    public string Author { get; init; } = "Flowless";
+    public List<string>? Contributors { get; init; } = ["Colobos9mm"];
+    public SemanticVersioning.Version Version { get; init; } = new("0.7.9-spt416port.1");
+    public SemanticVersioning.Range SptVersion { get; init; } = new("~4.1");
+    public bool HasPrepatcher { get; init; } = false;
+    public List<string>? Incompatibilities { get; init; } = ["ReadJsonConfigExample"];
+    // AES needs WTT-CommonLib for its quests. 4.0 did not declare it; declaring it makes a missing or
+    // wrong-major WTT-CommonLib show a clear mod-validation message instead of a dependency-injection error.
+    public Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; } = new()
+    {
+        { "com.wtt.commonlib", new SemanticVersioning.Range("~3.0.6") },
+    };
+    public string? Url { get; init; } = "https://github.com/Dono1402/AES";
+    public string License { get; init; } = "MIT";
 }
 
 /// <summary>
 /// Feel free to use this as a base for your mod
 /// </summary>
-[Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
+// SPT 4.1: the database is loaded before any OnLoad runs, and mods that add database content
+// (traders, quests) belong at Preload + n so that profiles referencing these traders load.
+// WTT-CommonLib's own init runs at exactly Preload. (4.0 used OnLoadOrder.PostDBModLoader + 1.)
+[Injectable(TypePriority = OnLoadOrder.Preload + 2)]
 public class AddTraderWithAssortJson(
     ModHelper modHelper,
     ImageRouter imageRouter,
-    ConfigServer configServer,
+    TraderConfig traderConfig, // SPT 4.1: configs are injected directly instead of ConfigServer.GetConfig<T>()
+    RagfairConfig ragfairConfig,
     TimeUtil timeUtil,
     WTTServerCommonLib.WTTServerCommonLib wttCommon,
     AddCustomTraderHelper AddCustomTraderHelper // This is a custom class we add for this mod, we made it injectable so it can be accessed like other classes here
 )
     : IOnLoad
 {
-    private readonly TraderConfig _traderConfig = configServer.GetConfig<TraderConfig>();
-    private readonly RagfairConfig _ragfairConfig = configServer.GetConfig<RagfairConfig>();
+    private readonly TraderConfig _traderConfig = traderConfig;
+    private readonly RagfairConfig _ragfairConfig = ragfairConfig;
 
 
-    public Task OnLoad()
+    // SPT 4.1: IOnLoad.OnLoad() became OnLoadAsync(CancellationToken)
+    public async Task OnLoadAsync(CancellationToken cancellationToken)
     {
         // A path to the mods files we use below
         var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
@@ -62,11 +73,11 @@ public class AddTraderWithAssortJson(
         var traderBaseSve = modHelper.GetJsonDataFromFile<TraderBase>(pathToMod, "db/svetlanaBase.json");
         
         // Create a helper class and use it to register our traders image/icon + set its stock refresh time
-        imageRouter.AddRoute(traderBaseAna.Avatar.Replace(".jpg", ""), traderImagePathAna);
+        imageRouter.AddRoute(traderBaseAna.Avatar!.Replace(".jpg", ""), traderImagePathAna);
         AddCustomTraderHelper.SetTraderUpdateTime(_traderConfig, traderBaseAna, timeUtil.GetHoursAsSeconds(1), timeUtil.GetHoursAsSeconds(2));
-        imageRouter.AddRoute(traderBaseEve.Avatar.Replace(".jpg", ""), traderImagePathEve);
+        imageRouter.AddRoute(traderBaseEve.Avatar!.Replace(".jpg", ""), traderImagePathEve);
         AddCustomTraderHelper.SetTraderUpdateTime(_traderConfig, traderBaseEve, timeUtil.GetHoursAsSeconds(1), timeUtil.GetHoursAsSeconds(2));
-        imageRouter.AddRoute(traderBaseSve.Avatar.Replace(".jpg", ""), traderImagePathSve);
+        imageRouter.AddRoute(traderBaseSve.Avatar!.Replace(".jpg", ""), traderImagePathSve);
         AddCustomTraderHelper.SetTraderUpdateTime(_traderConfig, traderBaseSve, timeUtil.GetHoursAsSeconds(1), timeUtil.GetHoursAsSeconds(2));
         
         // Add our trader to the config file, this lets it be seen by the flea market
@@ -101,9 +112,7 @@ public class AddTraderWithAssortJson(
         Assembly assembly = Assembly.GetExecutingAssembly();
         
         // Use WTT-CommonLib services
-        wttCommon.CustomQuestService.CreateCustomQuests(assembly);        
-        
-        // Send back a success to the server to say our trader is good to go
-        return Task.CompletedTask;
+        // WTT-CommonLib 3.x: CreateCustomQuests is async; await it so the quests are registered before load continues
+        await wttCommon.CustomQuestService.CreateCustomQuests(assembly);
     }
 }
