@@ -24,7 +24,12 @@ public record ModMetadata : IModMetadata
     public SemanticVersioning.Range SptVersion { get; init; } = new("~4.1");
     public bool HasPrepatcher { get; init; } = false;
     public List<string>? Incompatibilities { get; init; } = ["ReadJsonConfigExample"];
-    public Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; }
+    // AES needs WTT-CommonLib for its quests. 4.0 did not declare it; declaring it makes a missing or
+    // wrong-major WTT-CommonLib show a clear mod-validation message instead of a dependency-injection error.
+    public Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; } = new()
+    {
+        { "com.wtt.commonlib", new SemanticVersioning.Range("~3.0.6") },
+    };
     public string? Url { get; init; } = "https://github.com/Dono1402/AES";
     public string License { get; init; } = "MIT";
 }
@@ -52,7 +57,7 @@ public class AddTraderWithAssortJson(
 
 
     // SPT 4.1: IOnLoad.OnLoad() became OnLoadAsync(CancellationToken)
-    public Task OnLoadAsync(CancellationToken cancellationToken)
+    public async Task OnLoadAsync(CancellationToken cancellationToken)
     {
         // A path to the mods files we use below
         var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
@@ -107,9 +112,7 @@ public class AddTraderWithAssortJson(
         Assembly assembly = Assembly.GetExecutingAssembly();
         
         // Use WTT-CommonLib services
-        wttCommon.CustomQuestService.CreateCustomQuests(assembly);        
-        
-        // Send back a success to the server to say our trader is good to go
-        return Task.CompletedTask;
+        // WTT-CommonLib 3.x: CreateCustomQuests is async; await it so the quests are registered before load continues
+        await wttCommon.CustomQuestService.CreateCustomQuests(assembly);
     }
 }
